@@ -44,7 +44,7 @@
             </MenuBar>
             <ToolBar prefHeight="40.0" prefWidth="200.0">
               <items>
-                <Button mnemonicParsing="false" text="Tambah" />
+                <Button fx:id="btnTambah" mnemonicParsing="false" text="Tambah" />
               </items>
             </ToolBar>
          </children>

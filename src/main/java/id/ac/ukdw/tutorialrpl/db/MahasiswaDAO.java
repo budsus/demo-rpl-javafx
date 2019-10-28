@@ -70,7 +70,18 @@ public class MahasiswaDAO {
         }
     }
 
-    public static void deleteEmpWithId(String nim) throws SQLException, ClassNotFoundException {
+    public static void addMahasiswa(Mahasiswa mhs) throws SQLException, ClassNotFoundException {
+        String updateStmt = "INSERT INTO mahasiswa (nim, nama, email) VALUES ('" + mhs.getNim() + "', "
+                + "'" + mhs.getNama() + "', "
+                + "'" + mhs.getEmail() + "')";
+        try {
+            DBUtil.getInstance().dbExecuteUpdate(updateStmt);
+        } catch (SQLException e) {
+            throw e;
+        }
+    }
+
+    public static void deleteMahasiswaWithId(String nim) throws SQLException, ClassNotFoundException {
         String updateStmt = "DELETE FROM mahasiswa WHERE nim='" + nim + "'";
         try {
             DBUtil.getInstance().dbExecuteUpdate(updateStmt);

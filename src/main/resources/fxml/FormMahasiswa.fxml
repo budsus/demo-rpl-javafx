@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="151.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.tutorialrpl.FormMahasiswaController">
+   <children>
+      <Label layoutX="14.0" layoutY="27.0" text="NIM" />
+      <Label layoutX="14.0" layoutY="69.0" prefHeight="17.0" prefWidth="117.0" text="Nama Lengkap" />
+      <Label layoutX="14.0" layoutY="107.0" prefHeight="17.0" prefWidth="60.0" text="Email" />
+      <TextField fx:id="txtNIM" layoutX="139.0" layoutY="22.0" />
+      <TextField fx:id="txtNama" layoutX="139.0" layoutY="64.0" prefHeight="27.0" prefWidth="411.0" />
+      <TextField fx:id="txtEmail" layoutX="139.0" layoutY="102.0" prefHeight="27.0" prefWidth="411.0" />
+   </children>
+</AnchorPane>
